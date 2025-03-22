@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 50%;
+            margin: auto;
+        }
+        h2 {
+            text-align: center;
+        }
+        label {
+            font-weight: bold;
+        }
+        .form-group {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Application Form</h2>
+    <form action="#" method="#">
+        <div class="form-group">
+            <label>First Name: <input type="text" name="first_name"></label>
+            <label>Last Name: <input type="text" name="last_name"></label>
+        </div>
+
+        <div class="form-group">
+            <label>Date of Birth: <input type="text" placeholder="mm / dd / yyyy" name="dob"></label>
+            <label>Age: <input type="number" name="age"></label>
+        </div>
+
+        <div class="form-group">
+            <label>Gender:
+                <select name="gender">
+                    <option>Male</option>
+                    <option>Female</option>
+                    <option>Other</option>
+                </select>
+            </label>
+            <label>Email Address: <input type="email" name="email" placeholder="Enter email address"></label>
+        </div>
+        <div class="form-group">
+            <label>Positions Available:</label><br>
+            <input type="radio" name="position" value="junior"> Junior Developer
+            <input type="radio" name="position" value="mid"> Mid-level Developer
+            <input type="radio" name="position" value="senior"> Senior Developer
+        </div>
+
+        <div class="form-group">
+            <label>Programming Languages:</label>
+            <input type="checkbox" name="languages" value="java"> Java
+            <input type="checkbox" name="languages" value="javascript"> JavaScript
+            <input type="checkbox" name="languages" value="python"> Python
+        </div>
+
+        <div class="form-group">
+            <label>Password: <input type="password" name="password"></label>
+            <label>Confirm Password: <input type="password" name="confirm_password"></label>
+        </div>
+
+        <div class="form-group">
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </div>
+    </form>
+</div>
+
+</body>
+</html>

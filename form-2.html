@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Novell Service Login</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 320px;
+            margin: 50px auto;
+            padding: 20px;
+            border: 1px solid #000;
+            text-align: left;
+        }
+        .form-group {
+            margin-bottom: 10px;
+        }
+        .form-group input[type="text"],
+        .form-group input[type="password"],
+        .form-group select {
+            width: 160px;
+        }
+        .form-group input[type="radio"],
+        .form-group input[type="checkbox"] {
+            margin-left: 125px;
+        }
+        label {
+            display: inline-block;
+            width: 140px;
+        }
+        .buttons {
+            text-align: center;
+        }
+        h2 {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Novell Services Login</h2>
+    
+        <div class="form-group">
+            <label>Username:</label> 
+            <input type="text" name="name">
+        </div>
+        <div class="form-group">
+            <label>Password:</label>
+            <input type="password" name="password">
+        </div>
+        <div class="form-group">
+            <label>City of Employment:</label>
+            <input type="text" name="city">
+        </div>
+        <div class="form-group">
+            <label>Web server:</label>
+            <select>
+                <option>-- Choose a server --</option>
+                <option>Apache</option>
+                <option>FTP</option>
+                <option>HTTPS</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label>Please specify your role:</label> <br>
+            <input type="radio" name="role" value="admin"> Admin <br>
+            <input type="radio" name="role" value="Engineer"> Engineer <br>
+            <input type="radio" name="role" value="Manager"> Manager <br>
+            <input type="radio" name="role" value="Guest"> Guest <br>
+        </div>
+    
+        <div class="form-group">
+            <label>Single Sign-on to the following:</label><br>
+            <input type="checkbox" name="sso" value="Mail"> Mail <br>
+            <input type="checkbox" name="sso" value="Payroll"> Payroll <br>
+            <input type="checkbox" name="sso" value="Self-service"> Self-service <br>
+        </div>
+        <div class="buttons">
+            <input type="submit" value="Login">
+            <input type="reset" value="Reset">
+        </div>
+    </div>
+</body>
+</html>

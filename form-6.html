@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            height:100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        form{
+            max-width: 800px;
+            width: 100%;
+            padding: 20px;
+            background-color: #69faf3;
+            border-radius: 5px;
+            box-shadow: 15px 15px 15px rgba(0,0,0,.3);
+        }
+        .container h1{
+            margin-bottom: 30px;
+            text-align: center;
+            text-decoration: underline;
+        }
+
+        form .user-details{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .user-details label{
+            padding: 0 30px ;
+            font-weight: 600;
+        }
+        .user-details input[type="text"],
+        .user-details input[type="date"],
+        .user-details select{
+            width: 200px;
+        }
+        .user-details .user-radio{
+            width: calc(100% / 2);
+            font-weight: 700;
+            font-size: 15px;
+        }
+
+        .user-details textarea{
+            min-width: calc(100% / 2);
+            height: 50px;
+            margin-bottom: 10px;
+            max-width: 100%;
+            max-height: 100px;
+        }
+        .user-details {
+            margin: 20px 0;
+
+        }
+        .user-btn{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+        }
+        .user-btn button{
+            padding: 10px 20px;
+            margin: 0 10px;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Project Management</h1>
+        <form>
+            <div class="user-details">
+                <label>Project Name</label>
+            <input type="text" placeholder="project name" required>
+            </div>
+            <div class="user-details">
+                <label>Assigned to</label>
+                <select >
+                    <option>Leo</option>
+                    <option>Junaid</option>
+                    <option>Hadeed</option>
+                </select>
+            </div>
+            <div class="user-details">
+                <label>Start Date</label>
+                <input type="date" required>
+            </div>
+            <div class="user-details">
+                <label>End Date</label>
+                <input type="date" required>
+            </div>
+            <div class="user-details">
+                <label>Periority</label>
+                <div class="user-radio">
+                    <input type="radio"> High
+                <input type="radio"> Average
+                <input type="radio"> Low
+                </div>
+            </div>
+            <div class="user-details">
+                <label>Description</label>
+                <textarea></textarea> 
+            </div>
+
+            <div class="user-btn">
+                <button type="submit" style="background-color: #33d33b;">Submit</button>
+                <button type="reset" style="background-color: #537df5;">Clear</button>
+            </div>
+    </div>
+</body>
+</html>

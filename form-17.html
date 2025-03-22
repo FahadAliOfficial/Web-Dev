@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get in Touch</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            text-align: center;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .header img {
+            width: 100%;
+            height: 100vh;
+        }
+        .locations {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px 0;
+        }
+        .contact-form {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        .form-container {
+            width: 45%;
+            text-align: left;
+        }
+        .form-container input, .form-container textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .form-container button {
+            width: 100%;
+            padding: 10px;
+            background: red;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+        .map-container {
+            width: 50%;
+        }
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="Icons/bg17.jpg" alt="Building">
+        </div>
+        <div class="locations">
+            <span>Sydney</span>
+            <span>Melbourne</span>
+            <span>Los Angeles</span>
+            <span>London</span>
+        </div>
+        <div class="contact-form">
+            <div class="form-container">
+                <h2>Get in Touch</h2>
+                <input type="text" placeholder="Enter your Name">
+                <input type="email" placeholder="Enter a valid email address">
+                <textarea rows="4" placeholder="How can we help?"></textarea>
+                <button type="submit">SUBMIT</button>
+            </div>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3021.903452297023!2d-74.0059722845934!3d40.71277527933033!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sManhattan,+New+York,+NY!5e0!3m2!1sen!2sus!4v1616161616161"></iframe>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

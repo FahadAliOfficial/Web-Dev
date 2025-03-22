@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <style>
+        .container{
+            width: 30%;
+            padding: 20px;
+            border: 10px solid rgb(29, 100, 118);
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+        form{
+            width: 100%;
+        }
+        input, select{
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 2px solid black;
+
+        }
+        input[type="submit"]{
+            border-radius: 20px;
+        }
+        label{
+            font-weight: 600;
+        }
+    </style>
+    
+</head>
+<body>
+
+    <div class="container">
+        <form action="#">
+            <h1>New Product</h1>
+        <div>
+            <label>Name</label><br>
+            <input type="text">
+        </div>
+        <div>
+            <label>Price</label><br>
+            <input type="number">
+        </div>
+        <div>
+            <label>Released on</label><br>
+            <input type="number" min="2000" max="2025" step="1">
+            <select>
+                <option value="01">January</option>
+                <option value="02">February</option>
+                <option value="03">March</option>
+                <option value="04">April</option>
+                <option value="05">May</option>
+                <option value="06">June</option>
+                <option value="07">July</option>
+                <option value="08">August</option>
+                <option value="09">September</option>
+                <option value="10">October</option>
+                <option value="11">November</option>
+                <option value="12">December</option>
+            </select>
+            <input type="number" min="1" max="31">
+        </div>
+
+        <div>
+            <label>Category</label><br>
+            <select>
+                <option>Toys & Games</option>
+                <option >Books</option>
+                <option >Clothing</option>
+            </select>
+        </div>
+
+        <div>
+            <label>Rating</label><br>
+            <input type="number" min="1" max="5" step="1">
+        </div>
+        <div>
+            <label>Discontinued</label><br>
+            <input type="checkbox">
+        </div>
+        <div>
+            <input type="submit" value="Create Product">
+        </div>
+        </form>
+    </div>
+   
+</body>
+</html>

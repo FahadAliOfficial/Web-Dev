@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Signup Form</title>
+    <style>
+      /* Body Styling */
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #f4b629;
+        font-family: Arial, sans-serif;
+      }
+
+      /* Form Container */
+      .signup-container {
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+        width: 300px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        text-align: center;
+      }
+
+      /* Logo Box */
+      .logo-box {
+        border: 2px dashed #f4b629;
+        padding: 10px;
+        color: #f4b629;
+        font-weight: bold;
+        margin-bottom: 15px;
+      }
+
+      /* Input Fields */
+      input {
+        width: 100%;
+        padding: 8px;
+        margin: 5px 0;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+      }
+
+      /* Labels */
+      label {
+        display: block;
+        text-align: left;
+        font-size: 14px;
+        font-weight: bold;
+        margin-top: 10px;
+      }
+
+      /* Required Asterisk */
+      label span {
+        color: red;
+      }
+
+      /* Signup Button */
+      button {
+        background: #f4b629;
+        color: white;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        width: 100%;
+        margin-top: 10px;
+        cursor: pointer;
+        font-size: 16px;
+      }
+
+      button:hover {
+        background: #e0a117;
+      }
+
+      .account-text {
+        color: gray;
+        font-size: 12px;
+        text-align: left;
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="signup-container">
+      <div class="logo-box">Your Logo Here</div>
+      <form>
+        <label>First name <span>*</span></label>
+        <input type="text" required />
+
+        <label>Last name <span>*</span></label>
+        <input type="text" required />
+
+        <label>Email address <span>*</span></label>
+        <input type="email" required />
+
+        <label>Password <span>*</span></label>
+        <input type="password" required />
+
+        <label>Again password <span>*</span></label>
+        <input type="password" required />
+
+        <a  href="question14b.html" class="account-text">Have an account?</a> 
+        <button type="submit">Signup</button>
+      </form>
+    </div>
+  </body>
+</html>

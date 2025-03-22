@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #6c3ce9;
+        }
+        
+        .container {
+            position: relative;
+            width: 800px;
+            height: 644px;
+            background-color: #6c3ce9;
+            overflow: hidden;
+        }
+        
+        /* Yellow circles positioned correctly */
+        .yellow-circle-left {
+            position: absolute;
+            width: 260px;
+            height: 221px;
+            background-color: #ffc221;
+            border-radius: 50%;
+            top: 110px;
+            left: 193px;
+            z-index: 1;
+        }
+        
+        .yellow-circle-right {
+            position: absolute;
+            width: 261px;
+            height: 237px;
+            background-color: #ffc221;
+            border-radius: 50%;
+            top: 66px;
+            right: 172px;
+            z-index: 1;
+        }
+        
+        /* Student image in a white circle */
+        .student-container {
+            position: absolute;
+            width: 300px;
+            height: 300px;
+            background-color: white;
+            border-radius: 50%;
+            top: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 2;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .student-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        /* Form container */
+        .form-container {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 389px;
+            background-color: white;
+            display: flex;
+            z-index: 3;
+        }
+        
+        /* Left side - Contact form */
+        .contact-form {
+            flex: 1;
+            padding: 20px 30px;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .form-title {
+            color: #6c3ce9;
+            margin-bottom: 15px;
+            font-size: 22px;
+            font-weight: bold;
+        }
+        
+        .form-group {
+            margin-bottom: 15px;
+        }
+        
+        .form-label {
+            display: block;
+            margin-bottom: 5px;
+            color: #333;
+            font-size: 14px;
+        }
+        
+        .input-field {
+            width: 100%;
+            padding: 8px 2px;
+            border: none;
+            border-bottom: 1px solid #a29fd6;
+            font-size: 14px;
+            color: #999;
+        }
+        
+        .message-field {
+            height: 60px;
+            resize: none;
+            background: linear-gradient(to bottom right, white calc(100% - 15px), #a29fd6 calc(100% - 15px), #a29fd6 100%);
+        }
+        
+        .checkbox-container {
+            display: flex;
+            align-items: center;
+            margin: 10px 0;
+            font-size: 12px;
+        }
+        
+        .checkbox-container input {
+            margin-right: 8px;
+        }
+        
+        .terms {
+            color: #ff9d9d;
+        }
+        
+        .submit-btn {
+            background-color: #6c3ce9;
+            color: white;
+            border: none;
+            padding: 12px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+            width: 100%;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+        
+        /* Right side - Contact info */
+        .contact-info {
+            flex: 1;
+            padding: 30px;
+            background-color: #f5f5f5;
+        }
+        
+        .info-section {
+            margin-bottom: 25px;
+        }
+        
+        .info-title {
+            color: #6c3ce9;
+            margin-bottom: 10px;
+            font-size: 14px;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+        
+        .info-content {
+            color: #333;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+        
+        .credit {
+            font-size: 12px;
+            color: #777;
+            margin-top: 10px;
+        }
+        
+        .credit a {
+            color: #333;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Background shapes - positioned better now -->
+        <div class="yellow-circle-left"></div>
+        <div class="yellow-circle-right"></div>
+        
+        <!-- Student image in round container -->
+        <div class="student-container">
+            <img src="Icons/bg15.png" alt="Student" class="student-img">
+        </div>
+        
+        <!-- Form and info container -->
+        <div class="form-container">
+            <!-- Contact form -->
+            <div class="contact-form">
+                <h2 class="form-title">Contact Us</h2>
+                
+                <div class="form-group">
+                    <label class="form-label">Name</label>
+                    <input type="text" class="input-field" placeholder="Enter your Name">
+                </div>
+                
+                <div class="form-group">
+                    <label class="form-label">Email</label>
+                    <input type="email" class="input-field" placeholder="Enter a valid email address">
+                </div>
+                
+                <div class="form-group">
+                    <label class="form-label">Message</label>
+                    <textarea class="input-field message-field"></textarea>
+                </div>
+                
+                <div class="checkbox-container">
+                    <input type="checkbox" id="accept">
+                    <label for="accept">I accept the <span class="terms">Terms of Service</span></label>
+                </div>
+                
+                <button class="submit-btn">SUBMIT</button>
+            </div>
+            
+            <!-- Contact info -->
+            <div class="contact-info">
+                <div class="info-section">
+                    <h3 class="info-title">CALL US</h3>
+                    <p class="info-content">1 (234) 567-891</p>
+                    <p class="info-content">1 (234) 987-654</p>
+                </div>
+                
+                <div class="info-section">
+                    <h3 class="info-title">LOCATION</h3>
+                    <p class="info-content">121 Rock Street, 21 Avenue,</p>
+                    <p class="info-content">New York, NY 92103-9000</p>
+                </div>
+                
+                <div class="info-section">
+                    <h3 class="info-title">OUR TOP SERVICES</h3>
+                    <p class="info-content">Self-Studying</p>
+                    <p class="info-content">Online Courses</p>
+                    <p class="info-content">Challenge Yourself</p>
+                </div>
+                
+                <p class="credit">Image from <a href="#">Freepik</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

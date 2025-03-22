@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book Your Table</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background: #f5f5f5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+
+      .container {
+        display: flex;
+        background: white;
+        border-radius: 10px;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        width: 70%;
+      }
+
+      .image-container {
+        width: 50%;
+        position: relative;
+        background: #ffa500;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .image-container img {
+        width: 90%;
+        border-radius: 10px;
+      }
+
+      .form-container {
+        width: 50%;
+        padding: 40px;
+        background: #f8f8f8;
+        border-radius: 0 10px 10px 0;
+      }
+
+      h2 {
+        color: #333;
+        margin-bottom: 20px;
+      }
+
+      .input-group {
+        display: flex;
+        gap: 40px;
+      }
+
+      .input-group div {
+        flex: 1;
+      }
+
+      input,
+      textarea {
+        width: 100%;
+        padding: 10px;
+        margin-top: 5px;
+        margin-bottom: 15px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        display: block;
+        font-size: 14px;
+      }
+
+      button {
+        width: 100%;
+        padding: 10px;
+        background: #0099ff;
+        color: white;
+        border: none;
+        cursor: pointer;
+        font-size: 16px;
+        border-radius: 5px;
+      }
+
+      button:hover {
+        background: #007acc;
+      }
+    </style>
+  </head>
+  <body>
+      <div class="container">
+        <div class="image-container">
+          <img src="Icons/bg16.jpg" alt="Food Image" />
+        </div>
+      <div class="form-container">
+        <h2>Book your table</h2>
+        <form>
+          <div class="input-group">
+            <div>
+              <label>Phone</label>
+              <input
+                type="text"
+                placeholder="Enter your phone (e.g. 123-456-7890)"
+                required
+              />
+            </div>
+            <div>
+              <label>Name</label>
+              <input type="text" placeholder="Enter your Name" required />
+            </div>
+          </div>
+
+          <label>Date</label>
+          <input type="date" required />
+
+          <label>Message</label>
+          <textarea placeholder="Enter your message"></textarea>
+
+          <button type="submit">SUBMIT</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Question10</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+    
+    body {
+      background-color: #4169e1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 20px;
+    }
+    
+    .container {
+      display: flex;
+      width: 100%;
+      max-width: 1000px;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    .left-section {
+      color: white;
+      padding-right: 20px;
+    }
+    
+    .left-section h1 {
+      font-size: 48px;
+      font-weight: bold;
+      line-height: 1.2;
+      position: relative;
+      padding-left: 20px;
+    }
+    
+    .left-section h1::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 15px;
+      height: 80%;
+      width: 6px;
+      background-color: white;
+      border-radius: 3px;
+    }
+    
+    .form-card {
+      background-color: white;
+      border-radius: 8px;
+      padding: 25px;
+      width: 100%;
+      max-width: 400px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+    
+    .form-title {
+      margin-bottom: 20px;
+      font-size: 24px;
+      color: #333;
+    }
+    
+    .form-group {
+      margin-bottom: 15px;
+      position: relative;
+    }
+    
+    .form-group input {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+    
+    .form-group input:focus {
+      outline: none;
+      border-color: #4169e1;
+    }
+    
+    .form-group.error input {
+      border-color: #ff3333;
+    }
+    
+    .error-message {
+      color: #ff3333;
+      font-size: 12px;
+      margin-top: 5px;
+      display: flex;
+      align-items: center;
+    }
+    
+    .error-message::before {
+      content: '';
+      display: inline-block;
+      width: 12px;
+      height: 12px;
+      background-color: #ff3333;
+      border-radius: 50%;
+      margin-right: 5px;
+    }
+    
+    .password-toggle {
+      position: absolute;
+      right: 10px;
+      top: 12px;
+      cursor: pointer;
+      color: #999;
+    }
+    
+    .btn {
+      width: 100%;
+      padding: 14px;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      color: white;
+      background-color: #4169e1;
+      margin-top: 10px;
+    }
+    
+    .btn:hover {
+      background-color: #3658c5;
+    }
+    
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+      
+      .left-section {
+        margin-bottom: 30px;
+        padding-right: 0;
+        text-align: center;
+      }
+      
+      .left-section h1 {
+        font-size: 36px;
+      }
+      
+      .left-section h1::before {
+        left: 0;
+        height: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Left Section -->
+    <div class="left-section">
+      <h1>Form<br>Validation<br>JavaScript</h1>
+    </div>
+    
+    <!-- Form Section -->
+    <div class="form-card">
+      <h2 class="form-title">Signup</h2>
+      <form id="signupForm">
+        <div class="form-group" id="emailGroup">
+          <input type="email" id="email" placeholder="coding@gmail" value="codinglab@gmail">
+          <div class="error-message">Please enter a valid email address</div>
+        </div>
+        
+        <div class="form-group" id="passwordGroup">
+          <input type="password" id="password" placeholder="Password" value="codinglab123">
+          <span class="password-toggle">👁️</span>
+          <div class="error-message">Please enter atleast 8 character with number, symbol, capital and small letter</div>
+        </div>
+        
+        <div class="form-group" id="confirmPasswordGroup">
+          <input type="password" id="confirmPassword" placeholder="Confirm password" value="codinglab12">
+          <span class="password-toggle">👁️</span>
+          <div class="error-message">Password don't match.</div>
+        </div>
+        
+        <button type="submit" class="btn">Signup Now</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>

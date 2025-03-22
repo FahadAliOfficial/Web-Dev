@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Question9</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+    
+    body {
+      background-color: #4169e1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 20px;
+    }
+    
+    .container {
+      display: flex;
+      gap: 20px;
+      max-width: 900px;
+      width: 100%;
+      justify-content: center;
+    }
+    
+    .form-card {
+      background-color: white;
+      border-radius: 8px;
+      padding: 30px;
+      width: 100%;
+      max-width: 400px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+    
+    .form-title {
+      text-align: center;
+      margin-bottom: 20px;
+      font-size: 24px;
+      color: #333;
+    }
+    
+    .form-group {
+      margin-bottom: 15px;
+    }
+    
+    .form-group input {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      font-size: 14px;
+    }
+    
+    .form-group input:focus {
+      outline: none;
+      border-color: #4169e1;
+    }
+    
+    .password-field {
+      position: relative;
+    }
+    
+    .password-toggle {
+      position: absolute;
+      right: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+      cursor: pointer;
+      color: #999;
+    }
+    
+    .forgot-password {
+      text-align: right;
+      margin-bottom: 15px;
+    }
+    
+    .forgot-password a {
+      color: #0088cc;
+      font-size: 14px;
+      text-decoration: none;
+    }
+    
+    .btn {
+      width: 100%;
+      padding: 12px;
+      border: none;
+      border-radius: 4px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      color: white;
+    }
+    
+    .btn-primary {
+      background-color: #0088cc;
+    }
+    
+    .btn-primary:hover {
+      background-color: #0077b3;
+    }
+    
+    .divider {
+      display: flex;
+      align-items: center;
+      text-align: center;
+      margin: 20px 0;
+      color: #666;
+    }
+    
+    .divider::before,
+    .divider::after {
+      content: '';
+      flex: 1;
+      border-bottom: 1px solid #ddd;
+    }
+    
+    .divider::before {
+      margin-right: 10px;
+    }
+    
+    .divider::after {
+      margin-left: 10px;
+    }
+    
+    .social-btn {
+      display: flex;
+      align-items: center;
+      justify-content: start;
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      margin-bottom: 10px;
+      cursor: pointer;
+      font-size: 14px;
+      font-weight: 500;
+      text-decoration: none;
+      color: #333;
+    }
+    
+    .social-btn img {
+      margin-right: 10px;
+      width: 20px;
+      height: 20px;
+    }
+    
+    .social-btn.facebook {
+      background-color: #3b5998;
+      color: white;
+      border: none;
+    }
+    
+    .social-btn.google {
+      background-color: white;
+      color: #333;
+    }
+    
+    .account-prompt {
+      text-align: center;
+      margin-top: 15px;
+      font-size: 14px;
+      color: #666;
+    }
+    
+    .account-prompt a {
+      color: #0088cc;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+    i {
+      padding-right: 70px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Login Form -->
+    <div class="form-card">
+      <h2 class="form-title">Login</h2>
+      <form>
+        <div class="form-group">
+          <input type="email" placeholder="Email" required>
+        </div>
+        
+        <div class="form-group">
+          <div class="password-field">
+            <input type="password" placeholder="Password" required>
+            <span class="password-toggle">👁️</span>
+          </div>
+        </div>
+        
+        <div class="forgot-password">
+          <a href="#">Forgot password?</a>
+        </div>
+        
+        <button type="submit" class="btn btn-primary">Login</button>
+        
+        <div class="account-prompt">
+          Don't have an account? <a href="#">Signup</a>
+        </div>
+        
+        <div class="divider">Or</div>
+        
+        <a href="#" class="social-btn facebook">
+          <i class="fab fa-facebook-f"></i> Login with Facebook
+        </a>
+        
+        <a href="#" class="social-btn google">
+          <i class="fab fa-google"></i> Login with Google
+
+        </a>
+      </form>
+    </div>
+    
+    <!-- Signup Form -->
+    <div class="form-card">
+      <h2 class="form-title">Signup</h2>
+      <form>
+        <div class="form-group">
+          <input type="email" placeholder="Email" required>
+        </div>
+        
+        <div class="form-group">
+          <input type="password" placeholder="Create password" required>
+        </div>
+        
+        <div class="form-group">
+          <div class="password-field">
+            <input type="password" placeholder="Confirm password" required>
+            <span class="password-toggle">👁️</span>
+          </div>
+        </div>
+        
+        <button type="submit" class="btn btn-primary">Signup</button>
+        
+        <div class="account-prompt">
+          Already have an account? <a href="#">Login</a>
+        </div>
+        
+        <div class="divider">Or</div>
+        
+        <a href="#" class="social-btn facebook">
+          <i class="fab fa-facebook-f"></i> Login with Facebook
+        </a>
+        
+        <a href="#" class="social-btn google">
+          <i class="fab fa-google"></i> Login with Google
+        </a>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
