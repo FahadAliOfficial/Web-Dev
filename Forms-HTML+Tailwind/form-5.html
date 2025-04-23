@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book Your Table</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="flex items-center justify-center min-h-screen bg-gray-100">
+    <div class="flex bg-white rounded-lg shadow-lg overflow-hidden w-3/4 max-w-4xl">
+      <!-- Image Container -->
+      <div class="w-1/2 bg-orange-500 flex justify-center items-center">
+        <img src="Icons/bg16.jpg" alt="Food Image" class="w-5/6 rounded-lg" />
+      </div>
+      
+      <!-- Form Container -->
+      <div class="w-1/2 p-10 bg-gray-50">
+        <h2 class="text-2xl font-bold text-gray-800 mb-6">Book your table</h2>
+        <form>
+          <div class="flex gap-6 mb-4">
+            <div class="flex-1">
+              <label class="block text-gray-700 font-medium">Phone</label>
+              <input type="text" placeholder="123-456-7890" required class="w-full p-2 mt-1 border border-gray-300 rounded-md" />
+            </div>
+            <div class="flex-1">
+              <label class="block text-gray-700 font-medium">Name</label>
+              <input type="text" placeholder="Enter your Name" required class="w-full p-2 mt-1 border border-gray-300 rounded-md" />
+            </div>
+          </div>
+          
+          <label class="block text-gray-700 font-medium">Date</label>
+          <input type="date" required class="w-full p-2 mt-1 mb-4 border border-gray-300 rounded-md" />
+          
+          <label class="block text-gray-700 font-medium">Message</label>
+          <textarea placeholder="Enter your message" class="w-full p-2 mt-1 mb-4 border border-gray-300 rounded-md h-24"></textarea>
+          
+          <button type="submit" class="w-full bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 rounded-md">SUBMIT</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

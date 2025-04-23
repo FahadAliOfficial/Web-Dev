@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Form</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="flex items-center justify-center min-h-screen bg-purple-700">
+    <div class="relative w-[800px] h-[644px] bg-purple-700 overflow-hidden rounded-lg shadow-lg">
+      <div class="absolute w-[260px] h-[221px] bg-yellow-400 rounded-full top-[110px] left-[193px] z-10"></div>
+      <div class="absolute w-[261px] h-[237px] bg-yellow-400 rounded-full top-[66px] right-[172px] z-10"></div>
+      
+      <div class="absolute w-[300px] h-[300px] bg-white rounded-full top-[30px] left-1/2 transform -translate-x-1/2 flex justify-center items-center z-20 overflow-hidden">
+        <img src="Icons/bg15.png" alt="Student" class="w-full h-full object-cover" />
+      </div>
+      
+      <div class="absolute bottom-0 left-0 w-full h-[389px] bg-white flex z-30">
+        <div class="flex-1 p-6 flex flex-col">
+          <h2 class="text-purple-700 font-bold text-xl mb-4">Contact Us</h2>
+          <label class="text-gray-700 text-sm font-bold">Name</label>
+          <input type="text" class="w-full p-2 border-b border-gray-400 text-gray-700 focus:outline-none mb-4" placeholder="Enter your Name" />
+          <label class="text-gray-700 text-sm font-bold">Email</label>
+          <input type="email" class="w-full p-2 border-b border-gray-400 text-gray-700 focus:outline-none mb-4" placeholder="Enter a valid email address" />
+          <label class="text-gray-700 text-sm font-bold">Message</label>
+          <textarea class="w-full p-2 border-b border-gray-400 text-gray-700 focus:outline-none mb-4 h-16 resize-none"></textarea>
+          <div class="flex items-center text-xs text-gray-600">
+            <input type="checkbox" id="accept" class="mr-2" />
+            <label for="accept">I accept the <span class="text-red-400">Terms of Service</span></label>
+          </div>
+          <button class="w-full bg-purple-700 hover:bg-purple-800 text-white font-bold py-2 rounded mt-4">SUBMIT</button>
+        </div>
+        <div class="flex-1 p-6 bg-gray-100">
+          <div class="mb-6">
+            <h3 class="text-purple-700 font-bold text-sm">CALL US</h3>
+            <p class="text-gray-700 text-sm">1 (234) 567-891</p>
+            <p class="text-gray-700 text-sm">1 (234) 987-654</p>
+          </div>
+          <div class="mb-6">
+            <h3 class="text-purple-700 font-bold text-sm">LOCATION</h3>
+            <p class="text-gray-700 text-sm">121 Rock Street, 21 Avenue,</p>
+            <p class="text-gray-700 text-sm">New York, NY 92103-9000</p>
+          </div>
+          <div>
+            <h3 class="text-purple-700 font-bold text-sm">OUR TOP SERVICES</h3>
+            <p class="text-gray-700 text-sm">Self-Studying</p>
+            <p class="text-gray-700 text-sm">Online Courses</p>
+            <p class="text-gray-700 text-sm">Challenge Yourself</p>
+          </div>
+          <p class="text-xs text-gray-600 mt-4">Image from <a href="#" class="underline">Freepik</a></p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

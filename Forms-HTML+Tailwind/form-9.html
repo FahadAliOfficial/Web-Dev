@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-blue-600 flex justify-center items-center min-h-screen p-4">
+    <div class="flex flex-col md:flex-row gap-8 max-w-4xl w-full justify-center items-center">
+        <!-- Left Section -->
+        <div class="text-white text-center md:text-left">
+            <h1 class="text-4xl md:text-5xl font-bold relative pl-6">
+                Form<br>Validation<br>JavaScript
+                <span class="absolute left-0 top-1/2 transform -translate-y-1/2 h-4/5 w-1 bg-white rounded"></span>
+            </h1>
+        </div>
+        
+        <!-- Signup Form -->
+        <div class="bg-white rounded-lg p-6 shadow-lg w-full max-w-md">
+            <h2 class="text-center text-2xl font-bold text-gray-800 mb-4">Signup</h2>
+            <form id="signupForm">
+                <div class="mb-4 relative">
+                    <input required type="email" id="email" placeholder="coding@gmail" value="codinglab@gmail" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500">
+                    <p class="text-red-500 text-sm mt-1 hidden">Please enter a valid email address</p>
+                </div>
+                <div class="mb-4 relative">
+                    <input required type="password" id="password" placeholder="Password" value="codinglab123" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500">
+                    <span class="absolute right-3 top-3 text-gray-500 cursor-pointer">👁️</span>
+                    <p class="text-red-500 text-sm mt-1 hidden">Please enter at least 8 characters with a number, symbol, capital, and small letter</p>
+                </div>
+                <div class="mb-4 relative">
+                    <input required type="password" id="confirmPassword" placeholder="Confirm password" value="codinglab12" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500">
+                    <span class="absolute right-3 top-3 text-gray-500 cursor-pointer">👁️</span>
+                    <p class="text-red-500 text-sm mt-1 hidden">Passwords don't match.</p>
+                </div>
+                <button type="submit" class="w-full bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 rounded-lg">Signup Now</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
